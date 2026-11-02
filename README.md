@@ -16,6 +16,8 @@ Do not change DNS, publish, or replace the live domain without Matthew's go-ahea
 | `/products/fiat-stablecoin/` | Fiat ↔ Crypto reference-estimate converter |
 | `/products/virtual-account-issuance/` | Virtual accounts demo dashboard |
 | `/about/` | About Alteum |
+| `/privacy/` | Privacy Policy |
+| `/terms/` | Terms of Use |
 
 ## Recent changes (Nov 2026)
 - Homepage "Fiat and stablecoins" section uses original artwork: `capabilities.css` (coins, layout) and
@@ -25,8 +27,12 @@ Do not change DNS, publish, or replace the live domain without Matthew's go-ahea
 - Fixed duplicate arrow on the "Request an Alteum quote" button; each product page has its own meta description.
 - The CSS class name `blox-clone` on the homepage/About wrapper is a legacy name; approved styles depend on it.
 
+## Legal pages
+- `/privacy/` and `/terms/` are generated from the owner's approved Google Docs ("Eng - Privacy Policy - UpdateOct2026",
+  "Eng - AX Terms of Use - October 2026"). Wording must match those docs exactly; update the docs first, then the pages.
+- Footer legal name: Alteumx International, S.A.; legal pages are linked from every footer.
+
 ## Still open
-- Exact legal company name for the footer, plus Privacy Policy and Terms (do not invent them).
 - Footer says "Fiat ↔ stablecoin" while the page is titled "Fiat ↔ Crypto": pick one.
 - Physical phone testing.
 
