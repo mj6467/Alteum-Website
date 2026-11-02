@@ -33,7 +33,6 @@ Do not change DNS, publish, or replace the live domain without Matthew's go-ahea
 - Footer legal name: Alteumx International, S.A.; legal pages are linked from every footer.
 
 ## Still open
-- Footer says "Fiat ↔ stablecoin" while the page is titled "Fiat ↔ Crypto": pick one.
 - Physical phone testing.
 
 ## Original project notes (from the ChatGPT handoff; still apply)
