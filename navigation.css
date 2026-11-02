@@ -1,0 +1,49 @@
+/* Reference-style three-column product menu, using the approved Alteum identity. */
+body>header{z-index:80;overflow:visible}
+body>header nav{align-items:center}
+body>header nav .site-product-menu{position:static}
+body>header nav .site-product-menu>summary{display:flex;align-items:center;gap:6px;list-style:none;cursor:pointer;padding:12px 0;color:#48515e;font:500 13px/1.3 'DM Sans',Arial,sans-serif}
+.site-product-menu>summary::-webkit-details-marker{display:none}
+.site-product-menu[open]>summary{color:#142339}
+.site-product-menu[open] .menu-state{font-size:0}
+.site-product-menu[open] .menu-state:after{content:'−';font-size:14px}
+body>header nav details.site-product-menu>.product-mega{position:fixed;top:86px;left:50%;right:auto;transform:translateX(-50%);width:calc(100vw - 108px);max-width:1220px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;padding:0;border:1px solid #dfe2e4;border-radius:8px;background:#f5f5f0;color:#142339;box-shadow:0 22px 70px #1423391c;overflow:hidden;z-index:90}
+body>header nav details.site-product-menu:not([open])>.product-mega{display:none}
+body>header .product-mega .mega-product{display:block;position:relative;min-width:0;min-height:174px;padding:25px 24px 28px;margin:0;border:0;border-right:1px solid #dfe2e4;border-radius:0;background:#f5f5f0;text-align:left;color:#142339;line-height:1.5;transition:background .15s}
+body>header .product-mega .mega-product:nth-child(3n){border-right:0}
+body>header .product-mega .mega-product:nth-child(-n+3){border-bottom:1px solid #e5e7e8}
+body>header .product-mega .mega-product:hover{background:#e9edf4;color:#142339}
+body>header .product-mega .mega-product:focus-visible{outline:2px solid #051ff9;outline-offset:-4px}
+body>header .mega-icon{display:grid;place-items:center;width:33px;height:33px;margin:0 0 18px;background:#e7e9ed;border-radius:4px;color:#142339}
+body>header .mega-icon svg{width:19px;height:19px}
+body>header .mega-product strong{display:block;margin:0 0 4px;font:500 21px/1.2 'DM Sans',Arial,sans-serif;letter-spacing:-.6px;color:#142339}
+body>header .mega-product p{font:400 14px/1.45 'DM Sans',Arial,sans-serif;letter-spacing:-.15px;color:#5f6876;margin:0;max-width:330px}
+.nav-scrim{display:none;position:fixed;inset:0;background:#10172266;z-index:75;backdrop-filter:blur(1px)}
+body:has(>header .site-product-menu[open])>.nav-scrim{display:block}
+@media(max-width:1000px) and (min-width:761px){body>header nav{gap:22px}body>header nav details.site-product-menu>.product-mega{width:calc(100vw - 40px)}body>header .mega-product strong{font-size:18px}body>header .product-mega .mega-product{padding:22px 20px}}
+@media(max-width:760px){body>header nav details.site-product-menu>.product-mega{top:126px;width:calc(100vw - 24px);grid-template-columns:repeat(2,minmax(0,1fr));max-height:calc(100dvh - 150px);overflow-y:auto}body>header .product-mega .mega-product{min-height:160px;padding:20px 18px}body>header .mega-product strong{font-size:18px;letter-spacing:-.4px}body>header .mega-product p{font-size:12px}body>header .mega-icon{margin-bottom:14px}body>header .product-mega .mega-product:nth-child(n){border-right:1px solid #dfe2e4;border-bottom:1px solid #dfe2e4}body>header .product-mega .mega-product:nth-child(2n){border-right:0}.mobile-nav>.product-mega{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding:0;background:#f5f5f0;border:1px solid #dfe2e4;border-radius:6px;overflow:hidden}.mobile-nav .mega-product{display:block!important}.mobile-nav .mobile-extra{display:flex;flex-wrap:wrap;gap:20px;padding:20px 0}.mobile-nav .mobile-extra a{font-size:12px;padding:0;border:0}.mobile-nav:not([hidden]){max-height:calc(100dvh - 78px);overflow-y:auto;padding:12px 16px 0}.mobile-nav[hidden]{display:none!important}}
+@media(prefers-reduced-motion:reduce){body>header .mega-product{transition:none}}
+/* Alteum accents in the product menu; retain the approved ivory surface. */
+body>header .product-mega .mega-product{background:linear-gradient(135deg,#eef2ff 0%,#f5f5f0 75%);transition:background .2s ease,box-shadow .2s ease}
+body>header .product-mega .mega-product:nth-child(2n){background:linear-gradient(135deg,#eaf8f8 0%,#f5f5f0 75%)}
+body>header .product-mega .mega-product:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#051ff9,#00e4ec);opacity:.65}
+body>header .product-mega .mega-icon{background:#051ff9;color:#fff;box-shadow:0 4px 12px #051ff91a;transition:transform .2s ease}
+body>header .product-mega .mega-product:nth-child(2n) .mega-icon{background:#c9f0f1;color:#07566e;box-shadow:none}
+body>header .product-mega .mega-product:hover{background:#e4ebff;box-shadow:inset 0 0 0 1px #b7c9f5}
+body>header .product-mega .mega-product:nth-child(2n):hover{background:#ddf3f4;box-shadow:inset 0 0 0 1px #a5dcdf}
+body>header .product-mega .mega-product:hover strong{color:#051ff9}
+@media(hover:hover){body>header .product-mega .mega-product:hover .mega-icon{transform:translateY(-2px)}}
+@media(prefers-reduced-motion:reduce){body>header .product-mega .mega-icon{transition:none;transform:none!important}}
+/* Approved editorial direction, carried through the product dropdown. */
+body>header nav details.site-product-menu>.product-mega{background:#f5f5f0;border:1px solid #c9cfd5;border-radius:5px;box-shadow:0 20px 45px #14233914}
+body>header .product-mega .mega-product,body>header .product-mega .mega-product:nth-child(2n){background:#f5f5f0;border-color:#d1d6db;box-shadow:none;border-radius:0;padding:26px 28px;min-height:159px;transition:background .18s ease}
+body>header .product-mega .mega-product:before{content:none}
+body>header .product-mega .mega-icon,body>header .product-mega .mega-product:nth-child(2n) .mega-icon{width:21px;height:21px;margin-bottom:21px;background:transparent;border:0;border-radius:0;color:#051ff9;box-shadow:none;transform:none;transition:none}
+body>header .product-mega .mega-icon svg{width:20px;height:20px;stroke-width:1.45}
+body>header .mega-product strong{font-family:AlteumReference,'DM Sans',Arial,sans-serif;font-size:21px;line-height:1.25;letter-spacing:-.45px;font-weight:500;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+body>header .mega-product strong:after{content:'↗';font-size:15px;font-weight:400;color:#63758b;flex:none}
+body>header .mega-product p{font-family:AlteumReference,'DM Sans',Arial,sans-serif;font-size:14px;line-height:1.6;color:#637080;letter-spacing:0;max-width:330px}
+body>header .product-mega .mega-product:hover,body>header .product-mega .mega-product:nth-child(2n):hover{background:#eef0f1;box-shadow:none}
+body>header .product-mega .mega-product:hover strong,body>header .product-mega .mega-product:hover strong:after{color:#051ff9}
+@media(max-width:1000px){body>header .product-mega .mega-product,body>header .product-mega .mega-product:nth-child(2n){padding:24px 22px}body>header .mega-product strong{font-size:19px}}
+@media(max-width:760px){body>header .product-mega .mega-product,body>header .product-mega .mega-product:nth-child(2n){padding:22px 18px;min-height:168px}body>header .mega-product strong{font-size:18px;gap:10px}body>header .mega-product p{font-size:12px;line-height:1.6}body>header .product-mega .mega-icon{margin-bottom:18px}}

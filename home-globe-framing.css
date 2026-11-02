@@ -1,0 +1,7 @@
+/* Keep the whole payment network visible beside the opening copy. */
+@media(min-width:761px){
+ .hero .globe-scene{width:clamp(560px,54vw,820px);height:clamp(560px,54vw,820px);right:1.5%;top:calc(50% - 20px);transform:translateY(-50%)}
+}
+@media(max-width:760px){
+ .hero .globe-scene{width:min(540px,calc(100vw - 32px));height:min(540px,calc(100vw - 32px));right:50%;top:570px;transform:translate(50%,-50%)}
+}

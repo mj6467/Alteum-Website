@@ -1,0 +1,8 @@
+
+body>header nav>a,body>header nav .site-product-menu>summary{position:relative;border-radius:0;transition:color .15s ease}
+body>header nav>a:hover,body>header nav>a:focus-visible,body>header nav .site-product-menu>summary:hover,body>header nav .site-product-menu[open]>summary{color:#00cfdf;background:transparent;box-shadow:none}
+body>header nav>a:after,body>header nav .site-product-menu>summary:after{content:'';position:absolute;left:0;right:0;bottom:-3px;height:1px;background:#00cfdf;transform:scaleX(0);transform-origin:left;transition:transform .15s ease}
+body>header nav .site-product-menu>summary:after{bottom:8px}
+body>header nav>a:hover:after,body>header nav>a:focus-visible:after,body>header nav .site-product-menu>summary:hover:after,body>header nav .site-product-menu[open]>summary:after{transform:scaleX(1)}
+body>header .product-mega .mega-product:hover,body>header .product-mega .mega-product:nth-child(2n):hover{background:#f5f5f0;box-shadow:none}body>header .product-mega .mega-product:hover strong,body>header .product-mega .mega-product:hover strong:after{color:#00cfdf}
+@media(prefers-reduced-motion:reduce){body>header nav>a,body>header nav .site-product-menu>summary,body>header nav>a:after,body>header nav .site-product-menu>summary:after{transition:none}}

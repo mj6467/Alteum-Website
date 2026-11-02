@@ -1,0 +1,25 @@
+/* Responsive refinements only; approved desktop layouts remain intact. */
+@media(max-width:760px){
+ .vaw-finance .vaw-toolbar select,.conversion-desk select,.conversion-desk input{font-size:16px}
+ .vaw-finance .vaw-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:thin}
+ .vaw-finance .vaw-activity:before{content:'Swipe the table to view all details →';display:block;color:#7e8b9d;font-size:10px;line-height:17px;margin:18px 0 -10px}
+ .vaw-finance .vaw-activity td button{min-height:44px;min-width:44px;padding:8px 3px}
+ .vaw-finance .vaw-treasury-filter select{min-height:44px}
+ .ri-faq summary{min-height:44px;align-items:center}
+}
+@media(max-width:480px){
+ header .mobile-nav>.product-mega{grid-template-columns:1fr;border-radius:3px}
+ body>header .mobile-nav .product-mega .mega-product{display:grid!important;grid-template-columns:24px minmax(0,1fr);column-gap:12px;row-gap:5px;min-height:0;padding:15px 13px;border-right:0!important;border-bottom:1px solid #d1d6db}
+ body>header .mobile-nav .product-mega .mega-product:last-child{border-bottom:0}
+ body>header .mobile-nav .mega-icon{grid-column:1;grid-row:1 / span 2;width:24px;height:24px;margin:0;background:transparent}
+ body>header .mobile-nav .mega-icon svg{width:18px;height:18px}
+ body>header .mobile-nav .mega-product strong{grid-column:2;font-size:15px;line-height:21px;letter-spacing:-.2px;margin:0}
+ body>header .mobile-nav .mega-product p{grid-column:2;font-size:12px;line-height:18px;margin:0;max-width:none}
+ .vaw-finance .vaw-toolbar{grid-template-columns:1fr;gap:14px}
+ .vaw-finance .vaw-toolbar>label{width:100%;min-width:0}
+ .vaw-finance .vaw-toolbar select{width:100%;max-width:none}
+}
+@media(max-width:380px){
+ .vaw-finance .vaw-demo-accounts code{font-size:12px;letter-spacing:0;white-space:nowrap}
+}
+@media(max-width:760px){.vaw-finance #vaw-close{width:44px;height:44px;min-width:44px;min-height:44px}}

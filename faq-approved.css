@@ -1,0 +1,19 @@
+
+.blox-clone .exact-faq{background:#f5f5f0;padding:60px 48px 56px;max-width:1280px;margin:auto;border:0}
+.blox-clone .exact-faq h2{font-size:36px;line-height:1.15;letter-spacing:-1px;text-align:left;margin-bottom:35px;font-weight:500}
+.blox-clone .exact-faq>div{max-width:none}
+.blox-clone .exact-faq details{padding:20px 0;border-bottom:1px solid #d1d7df}
+.blox-clone .exact-faq details:last-child{border-bottom:0}
+.blox-clone .exact-faq summary{font-size:18px;line-height:1.4;letter-spacing:-.2px}
+.blox-clone .exact-faq summary>span{font-size:20px;color:#66768c}
+.blox-clone .exact-faq p{font-size:14px;line-height:1.7;color:#647184;margin-top:14px;max-width:820px}
+.blox-clone footer.institutional-footer{border-top:0}
+.blox-clone footer.institutional-footer .if-contact{border-top:1px solid #142339;padding-top:36px}
+@media(max-width:650px){.blox-clone .exact-faq{padding:45px 24px 35px}.blox-clone .exact-faq h2{font-size:29px;margin-bottom:26px}.blox-clone .exact-faq summary{font-size:16px}.blox-clone .exact-faq details{padding:18px 0}}
+
+
+.blox-clone .exact-faq{position:relative;padding-top:49px}
+.blox-clone .exact-faq:before{content:'';position:absolute;top:0;left:48px;right:48px;height:1px;background:#142339}
+/* Let the FAQ divider provide the separation after the API panel. */
+.blox-clone .editorial-api{border-bottom:0}
+@media(max-width:650px){.blox-clone .exact-faq:before{left:24px;right:24px}.blox-clone .exact-faq{padding-top:40px}}
