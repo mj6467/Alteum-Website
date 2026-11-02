@@ -13,5 +13,5 @@ body>header .product-mega .mega-product:hover,body>header .product-mega .mega-pr
 
 .mobile-nav .mobile-home{display:block;padding:9px 2px 18px;font-size:14px;color:#48515e;text-decoration:none}.mobile-nav .mobile-home:hover{color:#00cfdf}.mobile-nav .mobile-extra{flex-wrap:wrap}
 /* One type style for every primary navigation label. */
-body>header>.nav>nav>a,body>header .nav nav .site-product-menu>summary{font-family:'DM Sans',Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.4;letter-spacing:normal}
-.mobile-nav .mobile-home,.mobile-nav .mobile-extra a{font-family:'DM Sans',Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.4;letter-spacing:normal}
+body>header>.nav>nav>a,body>header .nav nav .site-product-menu>summary{font-family:AlteumReference,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.4;letter-spacing:normal}
+.mobile-nav .mobile-home,.mobile-nav .mobile-extra a{font-family:AlteumReference,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.4;letter-spacing:normal}

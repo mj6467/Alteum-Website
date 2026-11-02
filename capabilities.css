@@ -1,5 +1,5 @@
 /* Alteum — "Fiat and stablecoins" section. Original artwork; replaces the retired reference videos. */
-.ac-section{max-width:1440px;margin:0 auto;padding:100px 36px 90px;background:#f5f5f0;color:#142339;font-family:AlteumReference,'DM Sans',Arial,sans-serif;scroll-margin-top:90px}
+.ac-section{max-width:1440px;margin:0 auto;padding:100px 36px 90px;background:#f5f5f0;color:#142339;font-family:AlteumReference,AlteumReference,Arial,sans-serif;scroll-margin-top:90px}
 .ac-head{display:flex;justify-content:space-between;align-items:flex-start;gap:48px;margin:0 0 56px}
 .ac-head h2{font-size:48px;line-height:1.1;letter-spacing:-1.4px;font-weight:500;margin:0;max-width:673px}
 .ac-head-copy{flex:0 1 556px;display:flex;flex-direction:column;align-items:flex-start;gap:24px}
@@ -26,13 +26,13 @@
 /* Flow diagram (light card) */
 .acf-line{fill:none;stroke:#c3cad4;stroke-width:1.2}
 .acf-pill{fill:#fff;stroke:#d5d9da}
-.acf-code{font:500 15px AlteumReference,'DM Sans',Arial,sans-serif;fill:#142339;letter-spacing:.3px}
-.acf-meta{font:400 10px 'DM Sans',Arial,sans-serif;fill:#728093;letter-spacing:.3px}
+.acf-code{font:500 15px AlteumReference,AlteumReference,Arial,sans-serif;fill:#142339;letter-spacing:.3px}
+.acf-meta{font:400 10px AlteumReference,Arial,sans-serif;fill:#728093;letter-spacing:.3px}
 .acf-hub{fill:#142339}
-.acf-hub-text{font:300 13px 'DM Sans',Arial,sans-serif;fill:#fff;letter-spacing:1.6px}
+.acf-hub-text{font:300 13px AlteumReference,Arial,sans-serif;fill:#fff;letter-spacing:1.6px}
 .acf-dot{fill:#051ff9}
 .acf-coin{fill:#fff;stroke:#051ff9;stroke-width:1.2}
-.acf-col{font:400 9.5px 'DM Sans',Arial,sans-serif;fill:#8a95a3;letter-spacing:1.4px}
+.acf-col{font:400 9.5px AlteumReference,Arial,sans-serif;fill:#8a95a3;letter-spacing:1.4px}
 
 /* Route schematic (dark card) */
 .acr-grid circle{fill:rgba(255,255,255,.11)}
@@ -43,7 +43,7 @@
 .acr-name{font:400 10px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:rgba(255,255,255,.82);letter-spacing:.8px}
 .acr-pulse{fill:#fff}
 .acr-readout{position:absolute;top:28px;right:28px;text-align:right;font:400 11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.6px;color:rgba(255,255,255,.62);line-height:1.7}
-.acr-readout strong{display:block;font:500 15px AlteumReference,'DM Sans',Arial,sans-serif;letter-spacing:.2px;color:#fff;margin-bottom:2px}
+.acr-readout strong{display:block;font:500 15px AlteumReference,AlteumReference,Arial,sans-serif;letter-spacing:.2px;color:#fff;margin-bottom:2px}
 
 @media(max-width:1000px){.ac-head{flex-direction:column;gap:24px}.ac-head h2{font-size:40px}.ac-grid{grid-template-columns:1fr}.ac-card{min-height:0}}
 @media(max-width:650px){.ac-section{padding:64px 16px 56px}.ac-head{margin-bottom:36px}.ac-head h2{font-size:32px;letter-spacing:-.9px}
@@ -60,7 +60,7 @@
  background:radial-gradient(circle at 32% 26%,#ffffff 0,#eef1ff 14%,#b9c4ff 42%,#5a70ff 78%,#2a3fe6 100%);
  box-shadow:inset 0 0 0 2px rgba(255,255,255,.75),inset 0 0 0 9px rgba(255,255,255,.18),inset -10px -14px 26px rgba(10,25,160,.45),0 18px 34px -14px rgba(20,35,57,.45)}
 .acc-face:before{content:'';position:absolute;inset:14px;border-radius:50%;border:1px solid rgba(255,255,255,.55);box-shadow:inset 0 0 18px rgba(255,255,255,.25)}
-.acc-face b{position:relative;font:600 54px/1 AlteumReference,'DM Sans',Arial,sans-serif;color:#1527c9;text-shadow:0 1px 0 rgba(255,255,255,.7),0 -1px 1px rgba(5,20,140,.35);letter-spacing:-1px}
+.acc-face b{position:relative;font:600 54px/1 AlteumReference,AlteumReference,Arial,sans-serif;color:#1527c9;text-shadow:0 1px 0 rgba(255,255,255,.7),0 -1px 1px rgba(5,20,140,.35);letter-spacing:-1px}
 .acc-face b.sm{font-size:30px;letter-spacing:.5px}
 @keyframes acc-rock{0%,100%{transform:rotateY(-28deg) translateY(0)}50%{transform:rotateY(28deg) translateY(-8px)}}
 .acg-canvas{display:block;width:100%;height:380px}

@@ -1,5 +1,5 @@
 /* Privacy Policy and Terms of Use pages */
-.legal-page{max-width:1280px;margin:0 auto;padding:72px 48px 40px;color:#142339;font-family:AlteumReference,'DM Sans',Arial,sans-serif}
+.legal-page{max-width:1280px;margin:0 auto;padding:72px 48px 40px;color:#142339;font-family:AlteumReference,AlteumReference,Arial,sans-serif}
 .legal-head{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;padding-bottom:40px;border-bottom:1px solid #142339;margin-bottom:48px}
 .legal-kicker{display:block;font-size:10px;letter-spacing:1.8px;color:#051ff9;margin-bottom:22px}
 .legal-head h1{font-size:48px;line-height:1.08;letter-spacing:-1.4px;font-weight:500;margin:0}

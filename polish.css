@@ -1,0 +1,56 @@
+/* Site-wide consistency pass. Loaded last on every page.
+   One content column (1184px, left edge 128px on a 1440px screen), one font,
+   one heading scale, one primary button, readable small text. */
+
+:root{--col:1184px;--gutter:48px;--edge:max(var(--gutter),calc((100% - var(--col)) / 2))}
+
+/* ↔ is missing from Onest: borrow only that glyph from DM Sans (OFL) */
+@font-face{font-family:AlteumReference;src:url(/fonts/arrows.woff2) format('woff2');unicode-range:U+2194;font-weight:100 900}
+
+/* 1. One left edge everywhere */
+body>header>.nav.wrap{width:auto;max-width:none;margin:0;padding-left:var(--edge);padding-right:var(--edge)}
+body>header>.nav>.brand{min-width:0;width:96px;flex:none;align-items:flex-start}
+.hero.wrap{padding-left:var(--edge)!important;padding-right:var(--edge)!important}
+.hero-market-rail{left:var(--edge)!important;right:var(--edge)!important;width:auto!important;margin:0!important}
+.ac-section{max-width:1280px;padding-left:var(--gutter);padding-right:var(--gutter)}
+
+/* 2. One font (Onest, self-hosted) */
+body,button,input,select,textarea{font-family:AlteumReference,Arial,sans-serif}
+
+/* 3. One heading scale */
+.hero-copy h1{letter-spacing:-2.2px}
+.rs-intro h1,.vaw-intro h1,.ar-intro h1,.ri-intro h1,.legal-head h1,main h1{font-size:52px!important;line-height:1.06!important;letter-spacing:-1.6px!important;font-weight:500}
+.hero-copy h1{font-size:64px!important;line-height:1.04!important;letter-spacing:-2.2px!important}
+.ac-head h2,.blox-clone .editorial-heading h2{font-size:44px;line-height:1.08;letter-spacing:-1.3px}
+.blox-clone .exact-faq h2,.ri-faq h2{font-size:34px!important;line-height:1.15;letter-spacing:-.9px;font-weight:500}
+
+/* 4. One primary button */
+.button.primary,.ac-cta,.rs-cta,.desk-submit{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;height:48px;padding:0 20px;
+ background:#051ff9!important;color:#fff!important;border:0;border-radius:3px;font:500 14px/1 AlteumReference,Arial,sans-serif;letter-spacing:0;text-decoration:none;box-shadow:none;transition:background .2s}
+.button.primary:hover,.ac-cta:hover,.rs-cta:hover,.desk-submit:hover{background:#142339!important}
+.button.primary span,.ac-cta span,.rs-cta span,.desk-submit span{width:auto;height:auto;background:none;font-size:14px}
+.desk-submit{width:100%}
+
+/* 5. Readable small text */
+.market-intro{font-size:10px!important;letter-spacing:1.4px;line-height:1.7;max-width:130px!important;color:#647080}
+.eyebrow,.editorial-eyebrow,.legal-kicker,.ar-kicker,.rs-kicker{font-size:11px!important;letter-spacing:1.6px}
+.hero-market-rail small,.hero-market-rail span small{font-size:12px}
+.hero-market-rail .market-name{font-size:11px!important;color:#647080}
+.hero-market-rail .market-more{font-size:11px!important;color:#647080;line-height:1.5}
+.if-bottom,.if-bottom>a,.if-legal a{font-size:12px!important}
+.sector-meta>small,.sector-meta>span{font-size:11px!important}
+
+@media(max-width:900px){.rs-intro h1,.vaw-intro h1,.ar-intro h1,.ri-intro h1,.legal-head h1,main h1{font-size:42px}.hero-copy h1{font-size:52px}.ac-head h2,.blox-clone .editorial-heading h2{font-size:38px}}
+@media(max-width:650px){:root{--gutter:16px}.rs-intro h1,.vaw-intro h1,.ar-intro h1,.ri-intro h1,.legal-head h1,main h1{font-size:34px;letter-spacing:-1px}.hero-copy h1{font-size:42px;letter-spacing:-1.4px}
+.ac-head h2,.blox-clone .editorial-heading h2{font-size:30px;letter-spacing:-.8px}.blox-clone .exact-faq h2,.ri-faq h2{font-size:27px}.button.primary,.ac-cta,.rs-cta{width:100%}}
+
+/* Phone hero: text first, globe below it (no overlap), then the currency rail */
+@media(max-width:650px){
+ .hero-copy h1{font-size:44px!important;letter-spacing:-1.5px!important}
+ .rs-intro h1,.vaw-intro h1,.ar-intro h1,.ri-intro h1,.legal-head h1,main h1{font-size:36px!important;letter-spacing:-1px!important}
+ .hero.wrap{flex-direction:column!important;align-items:stretch!important;height:auto!important;min-height:0!important;max-height:none!important;padding-bottom:28px!important}
+ .hero-copy{order:1}
+ .globe-scene{order:2;position:relative!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;transform:none!important;width:100%!important;max-width:358px;aspect-ratio:1/1;height:auto!important;margin:28px auto 0!important}
+ .hero-market-rail{order:3;position:relative!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;margin-top:28px!important}
+ .market-more br{display:inline}
+}
