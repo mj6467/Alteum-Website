@@ -54,3 +54,44 @@ body,button,input,select,textarea{font-family:AlteumReference,Arial,sans-serif}
  .hero-market-rail{order:3;position:relative!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;margin-top:28px!important}
  .market-more br{display:inline}
 }
+
+/* ---------- Tablet / narrow-window fixes (side panel, small laptops) ---------- */
+/* Section intro: stacked text must not keep its 556px flex size as height */
+@media(max-width:1000px){.ac-head-copy{flex:none}}
+
+/* Same side margins for every section when the window narrows */
+@media(max-width:1100px){
+ .blox-clone .editorial-audiences,.blox-clone .exact-faq{padding-left:var(--gutter)!important;padding-right:var(--gutter)!important}
+ .blox-clone .exact-faq:before{left:var(--gutter)!important;right:var(--gutter)!important}
+ footer.institutional-footer .if-inner{padding-left:var(--gutter)!important;padding-right:var(--gutter)!important;box-sizing:border-box}
+}
+
+/* Currency row: even columns, names on one line, no squeezing */
+@media(max-width:1100px) and (min-width:651px){
+ .hero-market-rail{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr));column-gap:16px;row-gap:14px;align-items:end}
+ .hero-market-rail .market-intro{grid-column:1/-1;max-width:none!important}
+ .hero-market-rail .market-intro br{display:none}
+ .hero-market-rail .market-more{grid-column:1/-1}
+ .hero-market-rail .market-more br{display:none}
+ .hero-market-rail .market-discover{display:none}
+}
+.hero-market-rail .market-name{white-space:nowrap}
+
+/* Hero: below 900px put the globe under the text, never behind it */
+@media(max-width:900px){
+ .hero.wrap{flex-direction:column!important;align-items:stretch!important;height:auto!important;min-height:0!important;max-height:none!important;padding-top:56px!important;padding-bottom:32px!important}
+ .hero-copy{order:1;max-width:600px}
+ .globe-scene{order:2;position:relative!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;transform:none!important;width:100%!important;max-width:520px!important;aspect-ratio:1/1;height:auto!important;margin:32px auto 0!important}
+ .hero-market-rail{order:3;position:relative!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;margin-top:32px!important}
+}
+@media(max-width:650px){:root{--gutter:20px}.globe-scene{max-width:358px!important}}
+@media(max-width:1000px){
+ .ac-section{padding-top:72px;padding-bottom:64px}
+ .ac-head{margin-bottom:40px}
+ .acc-stage{height:260px}
+ .acg-canvas{height:320px}
+}
+@media(max-width:900px){
+ .hero-market-rail{padding-top:24px!important;padding-bottom:0!important}
+ .hero-market-rail .market-intro{margin-bottom:4px!important}
+}
